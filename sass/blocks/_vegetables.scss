@@ -1,0 +1,25 @@
+.vegetables {
+    width: 100%;
+    background: #F3FBF8;
+    &__top {
+        padding: 100px 170px 10px;
+        &-title {
+            @include font(normal, 700, 70px, 90px);
+            text-align: center;
+            color: #222222;
+        }
+        &-text {
+            padding: 20px 0 40px;
+            @include font(normal, 400, 18px, 30px);
+            text-align: center;
+            color: #555555;
+        }
+        &-link {
+            display: block;
+            @include font(normal, 500, 18px, 30px);
+            text-align: center;
+            color: #222222;
+            text-decoration: none;
+        }
+    }
+}

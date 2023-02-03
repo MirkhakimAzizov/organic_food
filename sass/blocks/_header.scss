@@ -1,3 +1,45 @@
+// Header styles
 .header {
     width: 100%;
+    .nav {
+        width: 100%;
+        padding: 45px 0;
+        @include flex(row, space-between, center);
+        &__list {
+            width: 30%;
+            @include flex(row, space-between, center);
+            list-style-type: none;
+            &__item {
+                &-link {
+                    text-decoration: none;
+                    @include font(normal, 400, 18px, 24px);
+                    color: #222222;
+                }
+            }
+        }
+    }
+    &__regis {
+        width: 25%;
+        @include flex(row, space-between, center);
+        &-search {
+            padding: 11px;
+            background: #F3FBF8;
+            border-radius: 50%;
+        }
+        &-buy {
+            padding: 11px;
+            background: #F3FBF8;
+            border-radius: 50%;
+        }
+        &-btn {
+            padding: 10px 23px;
+            @include font(normal, 400, 18px, 20px);
+            background: #09A66D;
+            border: none;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+    }
 }
+
+// Header styles end
